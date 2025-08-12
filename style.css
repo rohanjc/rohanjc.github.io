@@ -26,3 +26,12 @@ p {
 .card p:last-child {
 	margin-bottom: 0;
 }
+
+.fas {
+  font-weight: 900;
+  color: #7f87ff;
+}
+
+element {
+  color: #0093ff;
+}
