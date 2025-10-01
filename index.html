@@ -325,24 +325,36 @@
             border-color: rgba(138, 99, 255, 0.3);
         }
 
+        /* Remove the old icon styles */
         .feature-icon {
-            font-size: 2.5rem;
-            color: #6F47DB;
+            display: none;
+        }
+        
+        /* Add styles for the new images */
+        .feature-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
             margin-bottom: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.05);
             transition: all 0.3s ease;
         }
-
-        .feature-card:hover .feature-icon {
+        
+        .feature-card:hover .feature-image {
             transform: scale(1.1);
-            color: #6F47DB;
+            border-color: var(--primary);
         }
-
+        
+        /* Reduce the font sizes */
         .feature-card h3 {
             color: white;
+            font-size: 1.4rem; /* Reduced from 1.8rem */
         }
-
+        
         .feature-card p {
             color: rgba(255, 255, 255, 0.6);
+            font-size: 1rem; /* Reduced from 1.1rem */
         }
 
         /* About Section */
@@ -1263,23 +1275,17 @@
             
             <div class="features-grid">
                 <div class="feature-card animate-fade delay-2">
-                    <div class="feature-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
+                    <img src="https://placehold.co/120x120/8A63FF/FFFFFF?text=AI" alt="AI-Driven Insights" class="feature-image">
                     <h3>AI-Driven Insights</h3>
                     <p>Our intelligent algorithms analyze your data and give recommendations for process optimisations.</p>
                 </div>
                 <div class="feature-card animate-fade delay-3">
-                    <div class="feature-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
+                    <img src="https://placehold.co/120x120/00E5FF/121212?text=LLM" alt="On-Prem LLMs" class="feature-image">
                     <h3>On-Prem LLMs for enhanced querying</h3>
                     <p>Forget the risk of exposing your data to the open source LLMs. We help you host your private LLMs for querying ensuring utmost data privacy</p>
                 </div>
                 <div class="feature-card animate-fade delay-1">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
+                    <img src="https://placehold.co/120x120/FF6B9E/FFFFFF?text=Data" alt="Enhanced Decision Making" class="feature-image">
                     <h3>Enhanced Decision Making</h3>
                     <p>With LLMs fined tuned to your dataset and AI algorithms build to suit your problems, We help you enhance the decision by providing data-driven insights and AI predictive analysis.</p>
                 </div>
